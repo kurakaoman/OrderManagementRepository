@@ -1,4 +1,14 @@
-CREATE TABLE orders
+CREATE TABLE public.systems
+(
+    system_id integer NOT NULL,
+    client character varying(255) COLLATE pg_catalog."default",
+    system_description character varying(255) COLLATE pg_catalog."default",
+    system_name character varying(255) COLLATE pg_catalog."default",
+    technology_description character varying(255) COLLATE pg_catalog."default",
+    CONSTRAINT systems_pkey PRIMARY KEY (system_id)
+);
+
+CREATE TABLE public.orders
 (
    ordersid integer NOT NULL,
    amount_of_money double precision,
@@ -15,16 +25,6 @@ CREATE TABLE orders
        ON DELETE NO ACTION
 );
 
-
-CREATE TABLE public.systems
-(
-    system_id integer NOT NULL,
-    client character varying(255) COLLATE pg_catalog."default",
-    system_description character varying(255) COLLATE pg_catalog."default",
-    system_name character varying(255) COLLATE pg_catalog."default",
-    technology_description character varying(255) COLLATE pg_catalog."default",
-    CONSTRAINT systems_pkey PRIMARY KEY (system_id)
-);
 CREATE SEQUENCE public.orders_order_id_seq START 4;
 
 CREATE SEQUENCE public.systems_system_id_seq START 4;
