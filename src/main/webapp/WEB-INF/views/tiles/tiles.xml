@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="mainLayout" template="/WEB-INF/views/tiles/templates/main.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/tiles/templates/header.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/views/tiles/templates/footer.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menu.jsp"/>
+    </definition>
+    <definition name="allorders" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/order.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menuOrder.jsp"/>
+    </definition>
+
+    <definition name="activeorders" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/activeOrder.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menuOrder.jsp"/>
+    </definition>
+
+    <definition name="allsystem" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/system.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menuSystem.jsp"/>
+
+    </definition>
+
+    <definition name="editSystem" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/editSystem.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menuSystem.jsp"/>
+    </definition>
+
+    <definition name="editOrder" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/editOrder.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menuOrder.jsp"/>
+
+    </definition>
+
+    <definition name="searchSystem" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/searchSystem.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menuSystem.jsp"/>
+    </definition>
+
+    <definition name="searchOrder" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/searchOrder.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menuOrder.jsp"/>
+    </definition>
+    <definition name="aboutApp" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/aboutApp.jsp"/>
+    </definition>
+
+    <definition name="home" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/home.jsp"/>
+    </definition>
+
+    <definition name="findSystemByName" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/findSystem.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menuSystem.jsp"/>
+    </definition>
+
+    <definition name="findOrderByOrderNumber" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/findOrder.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menuOrder.jsp"/>
+
+    </definition>
+
+    <definition name="addSystem" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/addSystem.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menuSystem.jsp"/>
+    </definition>
+
+    <definition name="addOrder" extends="mainLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/pages/addOrder.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menuOrder.jsp"/>
+    </definition>
+
+
+</tiles-definitions>
