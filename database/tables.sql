@@ -25,6 +25,9 @@ CREATE TABLE public.systems
     technology_description character varying(255) COLLATE pg_catalog."default",
     CONSTRAINT systems_pkey PRIMARY KEY (system_id)
 );
+CREATE SEQUENCE public.orders_order_id_seq START 4;
+
+CREATE SEQUENCE public.systems_system_id_seq START 4;
 
 INSERT into systems (system_id,client,system_name,system_description,technology_description) values(0,'Stark industry','Power-boost','System allow boost IronMan with extra power','Language: Java, db MySQL, IDE Eclipse');
 INSERT into systems (system_id,client,system_name,system_description,technology_description) values(1,'Stark industry','Stark Medical System','Stark Medical System (SMC) was designed to helps to make a diagnosis - expert program','Language: Java, db MySQL, IDE Eclipse');

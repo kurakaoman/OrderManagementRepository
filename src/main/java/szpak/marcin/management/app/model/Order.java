@@ -3,6 +3,7 @@ package szpak.marcin.management.app.model;
 import szpak.marcin.management.app.util.DateUtil;
 
 import javax.persistence.*;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Entity
@@ -44,15 +45,15 @@ public class Order {
 //        return null;
 //    }
 
-//    public String dateToString(Date date) {
-//        if (date == null) {
-//            return "";
-//        } else {
-//            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-//            String dataString = dateFormat.format(date);
-//            return dataString;
-//        }
-//    }
+    public String dateToString(Date date) {
+        if (date == null) {
+            return "";
+        } else {
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            String dataString = dateFormat.format(date);
+            return dataString;
+        }
+    }
 
     public int getOrdersId() {
         return ordersId;
