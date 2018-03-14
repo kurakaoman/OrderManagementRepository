@@ -83,14 +83,6 @@
         <td colspan="5">PostgreSQL</td>
     </tr>
     <tr>
-        <td>(JQuery + UI)</td>
-        <td colspan="5">?</td>
-    </tr>
-    <tr>
-        <td>(JQuery DataTable)</td>
-        <td colspan="5">?</td>
-    </tr>
-    <tr>
         <td>Front-end:</td>
         <td>jsp</td>
         <td>Bootstrap</td>
